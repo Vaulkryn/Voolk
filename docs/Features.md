@@ -1,4 +1,4 @@
-## 🔧 Fonctionnalités
+## 🔧 Fonctionnalités futures
 
 __Commandes Slash:__</br>
 - /clear: Efface les messages d'un canal.

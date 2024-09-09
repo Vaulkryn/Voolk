@@ -16,9 +16,9 @@ __Fonctionnalités disponibles:__
 |:----------------:|:-------------------------------------------------------------------------------------|
 | `/play`          | Invite le bot dans le salon pour jouer l'audio provenant d'un URL YouTube            |
 
-| Commandes Texte  | Descriptif                                                                           |
-|:----------------:|:-------------------------------------------------------------------------------------|
-| `|rules`         | Affiche le règlement du serveur                                                      |
+| Commandes Texte | Descriptif                                                                           |
+|:---------------:|:-------------------------------------------------------------------------------------|
+| `rules`         | Affiche le règlement du serveur                                                      |
 
 | Événements               | Descriptif                                                                           |
 |:------------------------:|:-------------------------------------------------------------------------------------|
@@ -28,7 +28,7 @@ __Fonctionnalités disponibles:__
 
 #### 📂 __[Structure du projet](./ProjectStructure.md)__
 
-#### 🔧 __[Fonctionnalités](./Features.md)__
+#### 🔧 __[Fonctionnalités futures](./Features.md)__
 
 #### 🔐 __[Permissions](./BotConfig.md)__
 
