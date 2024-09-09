@@ -1,0 +1,6 @@
+.vscode/
+node_modules/
+package-lock.json
+src/commands/text/trolling.js
+src/config/rules.json
+src/config/serverData.json

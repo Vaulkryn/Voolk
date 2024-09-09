@@ -1,0 +1,19 @@
+{
+    "token": "[TOKEN]",
+    "client_id": "[CLIENT_ID]",
+    "servers": {
+        "[SERVERNAME]": {
+            "guild_id": "[GUILD_ID]",
+            "[PARAMETER-1]": "[VALUE]",
+            "[PARAMETER-2]": "[VALUE]",
+            "[PARAMETER-3]": "[VALUE]",
+            "commands": [
+                {
+                    "name": "[name]",
+                    "description": "[...]",
+                    "options": []
+                }
+            ]
+        }
+    }
+}
