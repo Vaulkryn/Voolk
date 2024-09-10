@@ -16,6 +16,9 @@ __Événements:__</br>
 - Système d'attribution de rôle selon les canaux choisis à l'arrivée dans le serveur.(Archétype de classe)
   - Géré en partie par le processus d'accueil de Discord.
 
+- Surveille les canaux et redirige les liens YT envoyés dans le canal vidéo sous la catégorie correspondante.
+  - Efface les URLs envoyés dans les canaux autres que "vidéo" et les réécris dans ceux-ci.
+
 ### À définir
 
 - Système général de gestion par MP aux membres.
