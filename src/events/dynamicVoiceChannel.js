@@ -35,12 +35,12 @@ export async function dynamicVoiceChannel(oldState, newState) {
                 }
             }
             const newChannel = await newState.guild.channels.create({
-                name: `🔊 Salon de ${newState.member.user.username}`,
+                name: `🔊 Salon de ${newState.member.displayName}`,
                 type: 2,
                 parent: newState.channel ? newState.channel.parentId : null,
             });
             await newState.setChannel(newChannel);
-            activeChannels.set(newChannel.id, newState.member.user.username);
+            activeChannels.set(newChannel.id, newState.member.displayName);
             console.log(`Voice channel: ${newChannel.name} created.\n`);
         } catch (error) {
             console.error(`Error creating or managing the new voice channel: ${error.message}`);
