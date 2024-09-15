@@ -34,38 +34,17 @@ export async function dynamicVoiceChannel(oldState, newState) {
                     return;
                 }
             }
-
             const newChannel = await newState.guild.channels.create({
                 name: `🔊 Salon de ${newState.member.user.username}`,
                 type: 2,
                 parent: newState.channel ? newState.channel.parentId : null,
             });
-
             await newState.setChannel(newChannel);
-
             activeChannels.set(newChannel.id, newState.member.user.username);
-
-            console.log(`New voice channel: ${newChannel.name} (${newChannel.id})\n`);
-
-            newState.guild.client.on('voiceStateUpdate', async (updatedVoiceState) => {
-                if (activeChannels.has(newChannel.id) && newChannel.members.size === 0) {
-                    try {
-                        const cachedChannel = updatedVoiceState.guild.channels.cache.get(newChannel.id);
-                        if (cachedChannel) {
-                            await cachedChannel.delete();
-                            const creatorName = activeChannels.get(newChannel.id);
-                            console.log(`The channel created by ${creatorName} (${newChannel.id}) has been deleted.\n`);
-                            activeChannels.delete(newChannel.id);
-                        } else {
-                            console.log(`${newChannel.id} no longer exists.`);
-                        }
-                    } catch (error) {
-                        console.error(`Error when deleting: ${error.message}`);
-                    }
-                }
-            });
+            console.log(`Voice channel: ${newChannel.name} created.\n`);
         } catch (error) {
             console.error(`Error creating or managing the new voice channel: ${error.message}`);
         }
     }
 }
+export { activeChannels };
