@@ -1,56 +1,33 @@
-import fs from 'fs';
-import path from 'path';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const env = process.env.BRANCH_ENV || 'dev-branch';
-
-let configPath;
-
-if (env === 'main') {
-    configPath = path.resolve('./src/config/prod-config/serverData.json');
-    console.log('Config file path:', configPath);
-} else if (env === 'dev-branch') {
-    configPath = path.resolve('./src/config/dev-config/serverData.json');
-    console.log('Config file path:', configPath);
-} else {
-    throw new Error('Unrecognized environment');
-}
-
-let config;
-
-function loadConfig() {
-    try {
-        config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
-    } catch (error) {
-        console.error(error);
-        config = {};
-    }
-}
-
-loadConfig();
-
 export function getToken() {
-    return config.token;
+    return process.env.TOKEN;
 }
 
 export function getClientId() {
-    return config.client_id;
+    return process.env.CLIENT_ID;
 }
 
 export function getAllGuildIds() {
-    return Object.values(config.servers).map(server => server.guild_id);
+    const guildIds = [];
+    if (process.env.LEVIATHAN_GUILD_ID) {
+        guildIds.push(process.env.LEVIATHAN_GUILD_ID);
+    }
+    // Others servers
+    return guildIds;
 }
 
 export function getServerConfigByGuildId(guildId) {
-    for (const serverName in config.servers) {
-        if (config.servers[serverName].guild_id === guildId) {
-            return { serverName, ...config.servers[serverName] };
-        }
+    if (guildId === process.env.LEVIATHAN_GUILD_ID) {
+        return {
+            serverName: "Léviathan",
+            guild_id: process.env.LEVIATHAN_GUILD_ID,
+            dynamic_voice_channel: process.env.LEVIATHAN_DYNAMIC_VOICE_CHANNELS.split(','),
+            commands: JSON.parse(process.env.LEVIATHAN_COMMANDS)
+        };
     }
-}
-
-export function reloadConfig() {
-    loadConfig();
+    // Others servers
+    return null;
 }
