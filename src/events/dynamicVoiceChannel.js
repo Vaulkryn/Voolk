@@ -1,7 +1,7 @@
 import { getServerConfigByGuildId } from '../../src/utils/serverDataHandler.js';
 import { PermissionsBitField } from 'discord.js';
 
-const activeChannels = new Map();
+export const activeChannels = new Map();
 
 export async function dynamicVoiceChannel(oldState, newState) {
     const guildId = newState.guild.id;
@@ -47,4 +47,3 @@ export async function dynamicVoiceChannel(oldState, newState) {
         }
     }
 }
-export { activeChannels };
