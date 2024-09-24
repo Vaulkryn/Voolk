@@ -1,7 +1,23 @@
 import fs from 'fs';
 import path from 'path';
+import dotenv from 'dotenv';
 
-const configPath = path.resolve('./src/config/serverData.json');
+dotenv.config();
+
+const env = process.env.BRANCH_ENV || 'dev-branch';
+
+let configPath;
+
+if (env === 'main') {
+    configPath = path.resolve('./src/config/prod-config/serverData.json');
+    console.log('Chemin du fichier de config:', configPath);
+} else if (env === 'dev-branch') {
+    configPath = path.resolve('./src/config/dev-config/serverData.json');
+    console.log('Chemin du fichier de config:', configPath);
+} else {
+    throw new Error('Environnement non reconnu !');
+}
+
 let config;
 
 function loadConfig() {
