@@ -2,7 +2,7 @@
 
 __Commandes Slash:__</br>
 - /clear: Efface les messages d'un canal.
-- Tableau d'inscriptions aux events de guildes.
+- Planning dynamique.
 - Système de lancer de dés.
 
 __Commandes Textes:__</br>
@@ -13,11 +13,11 @@ __Événements:__</br>
   - Restriction par membre.
   - Restriction par nombre de places.
 
-- Système d'attribution de rôle selon les canaux choisis à l'arrivée dans le serveur.(Archétype de classe)
-  - Géré en partie par le processus d'accueil de Discord.
+- Attribution des rôles via MP du bot donnant ainsi accès aux canaux de discussion dédiés.
 
-- Surveille les canaux et redirige les liens YT envoyés dans le canal vidéo sous la catégorie correspondante.
-  - Efface les URLs envoyés dans les canaux autres que "vidéo" et les réécris dans ceux-ci.
+- Surveille les canaux et supprime tout URL peu importe la provenance.
+
+- Avec l'API de YouTube, récupérer les dernières vidéos concernant une ou plusieurs chaîne et les poster dans un canal.
 
 ### À définir
 
