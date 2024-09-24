@@ -10,12 +10,12 @@ let configPath;
 
 if (env === 'main') {
     configPath = path.resolve('./src/config/prod-config/serverData.json');
-    console.log('Chemin du fichier de config:', configPath);
+    console.log('Config file path:', configPath);
 } else if (env === 'dev-branch') {
     configPath = path.resolve('./src/config/dev-config/serverData.json');
-    console.log('Chemin du fichier de config:', configPath);
+    console.log('Config file path:', configPath);
 } else {
-    throw new Error('Environnement non reconnu !');
+    throw new Error('Unrecognized environment');
 }
 
 let config;
