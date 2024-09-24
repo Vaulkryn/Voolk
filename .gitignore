@@ -1,6 +1,8 @@
 .vscode/
 node_modules/
 package-lock.json
+docs/Features-List.md
+docs/Recap.md
 src/commands/text/trolling.js
-src/config/rules.json
-src/config/serverData.json
+src/config/dev-config
+src/config/prod-config
