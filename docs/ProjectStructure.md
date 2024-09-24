@@ -28,7 +28,8 @@ Voolk
 │   │
 │   ├── events/
 │   │   ├── dynamicVoiceChannel.js
-│   │   └── eventHandler.js
+│   │   ├── eventHandler.js
+│   │   └── globalEventHandler.js
 │   │
 │   ├── utils/
 │   │   └── serverDataHandler.js
@@ -36,6 +37,8 @@ Voolk
 │   ├── deploy-commands.js
 │   └── index.js
 │
+├── .env
+├── .gitignore
 ├── LICENSE.txt
 └── package.json
 ```
