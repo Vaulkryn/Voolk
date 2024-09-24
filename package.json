@@ -4,7 +4,7 @@
   "scripts": {
     "initVoolk": "node src/index.js",
     "commands": "node src/deploy-commands.js",
-    "voolk": "npm run commands && npm run initVoolk"
+    "start": "npm run commands && npm run initVoolk"
   },
   "author": "Vaulkryn",
   "license": "ISC",
