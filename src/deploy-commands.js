@@ -7,10 +7,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
 
 (async () => {
     try {
-        console.log('Starting to deploy slash commands\n');
-
         const guildIds = getAllGuildIds();
-
         for (const guildId of guildIds) {
             const serverConfig = getServerConfigByGuildId(guildId);
             if (!serverConfig) {
@@ -29,7 +26,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
                 body: commands
             });
 
-            console.log(`Commands successfully deployed. ✅\n`);
+            console.log(`Commands successfully deployed. ✅`);
         }
     } catch (error) {
         console.error('Error deploying commands: ❌\n', error);

@@ -17,14 +17,14 @@ Voolk
 │   │   ├── slash/
 │   │   │   └── play.js
 │   │   ├── text/
-│   │   │   └── rules.js
+│   │   │   ├── rules.js
+│   │   │   └── trolling.js
 │   │   │
 │   │   ├── slashCommandHandler.js
 │   │   └── textCommandHandler.js
 │   │
 │   ├── config/
-│   │   ├── rules(exemple).json
-│   │   └── serverData(exemple).json
+│   │   └── rules.json
 │   │
 │   ├── events/
 │   │   ├── dynamicVoiceChannel.js
@@ -37,8 +37,8 @@ Voolk
 │   ├── deploy-commands.js
 │   └── index.js
 │
-├── .env
 ├── .gitignore
 ├── LICENSE.txt
-└── package.json
+├── package.json
+└── Procfile
 ```

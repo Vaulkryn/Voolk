@@ -4,5 +4,3 @@ node_modules/
 package-lock.json
 docs/Features-List.md
 docs/Recap.md
-src/config/dev-config
-src/config/prod-config

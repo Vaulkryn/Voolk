@@ -1,0 +1,65 @@
+{
+    "embedConfig": {
+        "color": "#000000",
+        "title": "📜 Règlement"
+    },
+    "field1": {
+        "title": "I. Règles Générales",
+        "content": [
+            "- Pas de pub, que ce soit pour toi ou pour d’autres, et les ventes sont interdites.",
+            "- Ne contourne pas les sanctions et n’usurpe pas l'identité de qui que ce soit.",
+            "- Pas de contenu porno, ça ne passe pas ici.",
+            "- Les cheats, les logiciels piratés, et les pratiques illégales sont à éviter.",
+            "- Les propos sexistes, racistes, discriminatoires, insultants ou provocateurs n’ont pas leur place ici."
+        ]
+    },
+    "field2": {
+        "title": "II. Pseudonyme / Avatar",
+        "content": [
+            "- Tes pseudos et tes photos de profil doivent rester clean : pas de contenu sexiste, raciste, ou autre chose de ce genre.",
+            "- La biographie et le statut Discord doivent aussi respecter cette règle."
+        ]
+    },
+    "field3": {
+        "title": "III. Règlement Textuel",
+        "content": [
+            "- Évite le spam et le flood, c’est gênant pour tout le monde.",
+            "- Ne partage pas d'infos privées sans l'accord des personnes concernées.",
+            "- N'abuse pas de la fonction \"spoiler\".",
+            "- Pas de mentions inutiles.",
+            "- Reste poli dans les échanges, ça fait toujours plaisir."
+        ]
+    },
+    "field4": {
+        "title": "IV. Règlement Vocal",
+        "content": [
+            "- Pas de changement de salon vocal incessant et sans raison.",
+            "- Évite de créer du bruit de fond ou de perturber les discussions.",
+            "- Vérifie que ton micro est bien réglé avant de rejoindre un canal vocal.",
+            "- Respecte le temps de parole : évite de parler tout le temps et donne aussi la chance aux autres de s'exprimer."
+        ]
+    },
+    "field5": {
+        "title": "V. Règlement en jeu",
+        "content": [
+            "- Respectes tes engagements: Les retards ou absences sans prévenir peuvent compliquer les choses.",
+            "- Lors des événements de groupe, joue le jeu et coopère. La triche ou les comportements nuisibles seront punis.",
+            "- Suis les instructions des organisateurs. Si tu as un empêchement, préviens l’équipe à l’avance pour qu’on puisse s’organiser."
+        ]
+    },
+    "field6": {
+        "title": "⚠️ Sanctions",
+        "content": [
+            "- Tu recevras un avertissement si tu ne respectes pas le règlement du serveur.",
+            "- Si les avertissements sont ignorés, tu seras banni sans aucune possibilité de retour."
+        ]
+    },
+    "field7": {
+        "title": "📩 Contact",
+        "content": [
+            "- Si tu as un problème ou si tu veux signaler quelque chose, contacte l'une de ces personnes: <@&1186390940940767262>, <@&1186389970114588805> ou <@&1186390251363631184>",
+            "- Ensuite je me chargerais moi-même de les effacer de l'existen.. hum.",
+            "- La modération appliquera les sanctions en conséquence."
+        ]
+    }
+}
