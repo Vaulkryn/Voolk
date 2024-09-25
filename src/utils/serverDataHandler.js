@@ -11,23 +11,20 @@ export function getClientId() {
 }
 
 export function getAllGuildIds() {
-    const guildIds = [];
-    if (process.env.LEVIATHAN_GUILD_ID) {
-        guildIds.push(process.env.LEVIATHAN_GUILD_ID);
-    }
-    // Others servers
-    return guildIds;
+    return Object.keys(process.env)
+        .filter(key => key.endsWith('_GUILD_ID'))
+        .map(key => process.env[key]);
 }
 
 export function getServerConfigByGuildId(guildId) {
-    if (guildId === process.env.LEVIATHAN_GUILD_ID) {
+    const prefix = Object.keys(process.env).find(key => process.env[key] === guildId)?.replace('_GUILD_ID', '');
+    if (prefix) {
         return {
-            serverName: "Léviathan",
-            guild_id: process.env.LEVIATHAN_GUILD_ID,
-            dynamic_voice_channel: process.env.LEVIATHAN_DYNAMIC_VOICE_CHANNELS.split(','),
-            commands: JSON.parse(process.env.LEVIATHAN_COMMANDS)
+            serverName: prefix.replace('_', ' '),
+            guild_id: process.env[`${prefix}_GUILD_ID`],
+            dynamic_voice_channel: process.env[`${prefix}_DYNAMIC_VOICE_CHANNELS`].split(','),
+            commands: JSON.parse(process.env[`${prefix}_COMMANDS`])
         };
     }
-    // Others servers
     return null;
 }
