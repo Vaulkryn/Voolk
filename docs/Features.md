@@ -15,10 +15,6 @@ __Événements:__</br>
 
 - Attribution des rôles via MP du bot donnant ainsi accès aux canaux de discussion dédiés.
 
-- Surveille les canaux et supprime tout URL peu importe la provenance.
-
-- Avec l'API de YouTube, récupérer les dernières vidéos concernant une ou plusieurs chaîne et les poster dans un canal.
-
 ### À définir
 
 - Système général de gestion par MP aux membres.

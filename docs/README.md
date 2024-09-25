@@ -46,12 +46,15 @@ __Fonctionnalités disponibles:__
 ---
 
 ### Release v0.10.0:
-| Version  | Objectif                                           |État |
-|:--------:|:---------------------------------------------------|:---:|
+| Version  | Objectif                                           | État |
+|:--------:|:---------------------------------------------------|:----:|
 | v0.1.0   | Initial commit                                     | ✅ |
-| v0.2.0   | DynamicVoiceChannel: MAJ en direct du nom du salon | 🛠️ |
-| v0.3.0   | DynamicVoiceChannel: Statut de salon               | 📝 |
-| v0.4.0   | Web scraping                                       | 📝 |
+| v0.2.0   | Web scraping                                       | 🛠️ |
+| v0.3.0   | YouTubeChannelNotifier                             | 📝 |
+| v0.4.0   | URL Hunter                                         | 📝 |
+| v0.5.0   | /sondage                                           | 📝 |
+| v0.6.0   | DynamicVoiceChannel: MAJ en direct du nom du salon | 📝 |
+| v0.7.0   | DynamicVoiceChannel: Statut de salon               | 📝 |
 | _        | Stabiliser la lecture des URLs YouTube             | ⚠️ |
 
 
