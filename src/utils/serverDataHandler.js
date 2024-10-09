@@ -1,6 +1,9 @@
 import dotenv from 'dotenv';
+import fs from 'fs';
 
 dotenv.config();
+
+const commands = JSON.parse(fs.readFileSync('./src/config/commands.json', 'utf8'));
 
 export function getToken() {
     return process.env.TOKEN;
@@ -22,8 +25,8 @@ export function getServerConfigByGuildId(guildId) {
         return {
             serverName: prefix.replace('_', ' '),
             guild_id: process.env[`${prefix}_GUILD_ID`],
-            dynamic_voice_channel: process.env[`${prefix}_DYNAMIC_VOICE_CHANNELS`].split(','),
-            commands: JSON.parse(process.env[`${prefix}_COMMANDS`])
+            dynamic_voice_channel: process.env[`${prefix}_DYNAMIC_VOICE_CHANNELS`]?.split(',') || [],
+            commands: commands[prefix] || []
         };
     }
     return null;
