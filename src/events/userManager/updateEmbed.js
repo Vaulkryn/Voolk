@@ -3,9 +3,14 @@ import { EmbedBuilder } from 'discord.js';
 
 export async function updateEmbed(message) {
     try {
+        const googleCredentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT);
+
         const auth = new google.auth.GoogleAuth({
-            keyFile: 'src/config/google-credentials.json',
-            scopes: ['https://www.googleapis.com/auth/documents.readonly'],
+            credentials: {
+                client_email: googleCredentials.client_email,
+                private_key: googleCredentials.private_key.replace(/\\n/g, '\n'),
+            },
+            scopes: ['https://www.googleapis.com/auth/documents'],
         });
 
         const docs = google.docs({ version: 'v1', auth });

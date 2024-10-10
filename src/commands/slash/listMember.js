@@ -4,8 +4,13 @@ export default async function listMember(interaction) {
     try {
         await interaction.deferReply({ ephemeral: true });
 
+        const googleCredentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT);
+
         const auth = new google.auth.GoogleAuth({
-            keyFile: 'src/config/google-credentials.json',
+            credentials: {
+                client_email: googleCredentials.client_email,
+                private_key: googleCredentials.private_key.replace(/\\n/g, '\n'),
+            },
             scopes: ['https://www.googleapis.com/auth/documents.readonly'],
         });
 
