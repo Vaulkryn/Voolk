@@ -1,0 +1,40 @@
+{
+    "VAULKRON": [
+        {
+            "name": "play",
+            "description": "Joue l'audio de la vidéo YouTube",
+            "options": [
+                {
+                    "type": 3,
+                    "name": "url",
+                    "description": "Ne supporte que les URLs YouTube",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "name": "listmember",
+            "description": "Affiche la liste de tous les membres inscrits/non inscrits",
+            "options": []
+        }
+    ],
+    "LEVIATHAN": [
+        {
+            "name": "play",
+            "description": "Joue l'audio de la vidéo YouTube",
+            "options": [
+                {
+                    "type": 3,
+                    "name": "url",
+                    "description": "Ne supporte que les URLs YouTube",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "name": "listmember",
+            "description": "Affiche la liste de tous les membres inscrits/non inscrits",
+            "options": []
+        }
+    ]
+}
