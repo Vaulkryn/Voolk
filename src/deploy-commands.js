@@ -26,7 +26,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
                 body: commands
             });
 
-            console.log(`Commands successfully deployed. ✅`);
+            console.log(`Commands successfully deployed. ✅\n`);
         }
     } catch (error) {
         console.error('Error deploying commands: ❌\n', error);

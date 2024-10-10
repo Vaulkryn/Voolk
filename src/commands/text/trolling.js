@@ -1,4 +1,4 @@
-const targetUserId = '328623766605398017';
+const targetUserId = '????????????????';
 
 const taunts = [
     "T'as pris des cours de médiocrité ou ça vient naturellement ?",
