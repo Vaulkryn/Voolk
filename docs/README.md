@@ -15,10 +15,12 @@ __Fonctionnalités disponibles:__
 | Commandes Slash  | Descriptif                                                                           |
 |:----------------:|:-------------------------------------------------------------------------------------|
 | `/play`          | Invite le bot dans le salon pour jouer l'audio provenant d'un URL YouTube            |
+| `/listMember`    | Affiche les membres actuellement recensés                                            |
 
 | Commandes Texte | Descriptif                                                                           |
 |:---------------:|:-------------------------------------------------------------------------------------|
 | `rules`         | Affiche le règlement du serveur                                                      |
+| `memberList`    | Affiche un tableau de recensement des membres du serveur                             |
 
 | Événements               | Descriptif                                                                           |
 |:------------------------:|:-------------------------------------------------------------------------------------|
@@ -46,16 +48,18 @@ __Fonctionnalités disponibles:__
 ---
 
 ### Release v0.10.0:
-| Version  | Objectif                                           | État |
-|:--------:|:---------------------------------------------------|:----:|
-| v0.1.0   | Initial commit                                     | ✅ |
-| v0.2.0   | Web scraping                                       | 🛠️ |
-| v0.3.0   | YouTubeChannelNotifier                             | 📝 |
-| v0.4.0   | URL Hunter                                         | 📝 |
-| v0.5.0   | /sondage                                           | 📝 |
-| v0.6.0   | DynamicVoiceChannel: MAJ en direct du nom du salon | 📝 |
-| v0.7.0   | DynamicVoiceChannel: Statut de salon               | 📝 |
-| _        | Stabiliser la lecture des URLs YouTube             | ⚠️ |
+| Version  | Objectif                                                    | État |
+|:--------:|:------------------------------------------------------------|:----:|
+| v0.1.0   | Initial commit                                              | ✅ |
+| v0.2.0   | Tableau de recensement & commande /listmember               | ✅ |
+| v0.3.0   | DynamicVoiceChannel: MAJ en direct du nom du salon          | 🛠️ |
+| v0.4.0   | Web scraping                                                | 📝 |
+| v0.5.0   | YouTubeChannelNotifier                                      | 📝 |
+| v0.6.0   | URL Hunter                                                  | 📝 |
+| v0.7.0   | /sondage                                                    | 📝 |
+| v0.8.0   | Générer des fichiers .json pour setup les settings serveur  | 📝 |
+| v0.9.0   | DynamicVoiceChannel: Statut de salon                        | 📝 |
+| _        | Stabiliser la lecture des URLs YouTube                      | ⚠️ |
 
 
 ## License

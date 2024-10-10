@@ -13,12 +13,8 @@ __Événements:__</br>
   - Restriction par membre.
   - Restriction par nombre de places.
 
-- Attribution des rôles via MP du bot donnant ainsi accès aux canaux de discussion dédiés.
-
 ### À définir
 
-- Système général de gestion par MP aux membres.
-  - Les membres pourront renseigner les items qu'ils possèdent.
-  - Les items seront stockés en bdd puis affiché à la demande via une commande.
+- Système par MP aux membres.
   - Notification pour confirmation de présence  en jeu, voire d'archétype de classe.
   - Rappel des inscriptions aux events de guilde, aux sondages ou tout autre demande.

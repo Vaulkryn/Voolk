@@ -15,8 +15,11 @@ Voolk
 ├── src/
 │   ├── commands/
 │   │   ├── slash/
+│   │   │   ├── listMember.js
 │   │   │   └── play.js
+│   │   │
 │   │   ├── text/
+│   │   │   ├── memberList.js
 │   │   │   ├── rules.js
 │   │   │   └── trolling.js
 │   │   │
@@ -24,12 +27,17 @@ Voolk
 │   │   └── textCommandHandler.js
 │   │
 │   ├── config/
+│   │   ├── commands.json
+│   │   ├── google-credentials.json
 │   │   └── rules.json
 │   │
 │   ├── events/
+│   │   ├── userManager/
+│   │   │   └── [...]
 │   │   ├── dynamicVoiceChannel.js
 │   │   ├── eventHandler.js
 │   │   └── globalEventHandler.js
+│   │
 │   │
 │   ├── utils/
 │   │   └── serverDataHandler.js
